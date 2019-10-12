@@ -1,0 +1,10 @@
+@import "../public/iconfont/iconfont.css";
+@import "assets/common/reset.css";
+@import "assets/common/fade.css";
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

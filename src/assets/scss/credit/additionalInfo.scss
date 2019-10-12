@@ -1,0 +1,55 @@
+.additionalInfo{
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  .titName{
+    margin-top: 35px;
+    font-family: PingFang-SC-Medium;
+    font-size: 30px;
+    color: #333333;
+    letter-spacing: 0;
+  }
+  .titNum{
+    font-family: PingFang-SC-Medium;
+    font-size: 26px;
+    color: #A5A5A5;
+    letter-spacing: 0;
+    margin-top: 5px;
+  }
+  .mB20{
+    margin-bottom: 20px;
+  }
+  .nameStyle{
+    font-family: PingFangSC-Regular;
+    font-size: 30px;
+    color: #6F6F6F;
+    letter-spacing: 0;
+  }
+  .iconStyle{
+    position: absolute;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    color: #D3D3D3;
+  }
+  .iconChecked{
+    color:#2756D7;
+  }
+  .uploadBtn{
+    width:690px;
+    height: 88px;
+    margin: 110px auto 0;
+    line-height: 88px;
+    color:#fff;
+    background: #2756D7 ;
+  }
+  :global{
+    .am-accordion .am-accordion-item .am-accordion-header{
+      height:70px;
+      line-height: 1;
+    }
+    .am-accordion .am-accordion-item .am-accordion-header i{
+      top:30px;
+    }
+  }
+}

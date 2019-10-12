@@ -1,0 +1,50 @@
+@import "../common";
+.creditCard {
+  background: #f6f7fa;
+  height: 100%;
+  .cardTop {
+    width: 750px;
+    height: 528px;
+    background: #fff;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    .cardBgWarp {
+      width: 640px;
+      height: 380px;
+      img {
+        width: 100%;
+      }
+    }
+    .creditCardBtn {
+      @extend .continueBtn;
+      width: 640px;
+      margin-top: 0;
+      border-radius: 0;
+      &:before {
+        border: none;
+      }
+    }
+  }
+}
+:global{
+  .modal-desc {
+    text-align: left;
+    width: 464px;
+    height: 132px;
+    font-size: 30px;
+    color: #6D7278;
+    letter-spacing: 0;
+    line-height: 44px;
+    margin: 0 auto 51px;
+  }
+  .modal-con-val {
+    width: 464px;
+    text-align: left;
+    font-size: 32px;
+    color: #1C1C1C;
+    letter-spacing: 0;
+    font-weight: bold;
+    margin: 0 auto;
+    line-height: 60px;
+  }
+}

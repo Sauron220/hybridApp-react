@@ -1,0 +1,58 @@
+.resetTransaction{
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  background: #F6F7FA;
+  .input-wrap{
+    height: 110px;
+    margin-bottom: 80px;
+  }
+  .conBtn{
+    width:650px;
+    height:90px;
+    margin: 0 auto;
+    background:rgba(39,86,215,1);
+    border-radius:45px;
+    font-size:34px;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    line-height:90px;
+  }
+  .viaBtn{
+    width:650px;
+    height:90px;
+    margin: 0 auto;
+    border-radius:45px;
+    border:1px solid rgba(39,86,215,1);
+    font-size:34px;
+    font-weight:bold;
+    color:rgba(39,86,215,1);
+    line-height:90px;
+  }
+  .orStyle{
+    width:580px;
+    margin: 0 auto;
+    position: relative;
+    span{
+      display: inline-block;
+      &:nth-of-type(1){
+        margin-right: 159px;
+      }
+    }
+
+    .line{
+      width:200px;
+      height:1px;
+      background:rgba(226,227,229,1);
+      margin: 40px 0;
+    }
+    .txtStyle{
+      position: absolute;
+      left: 265px;
+      top: 10px;
+      font-size:40px;
+      font-weight:bold;
+      color:rgba(226,227,229,1);
+    }
+  }
+}

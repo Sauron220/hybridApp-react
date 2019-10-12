@@ -1,0 +1,44 @@
+@import "../common";
+.face {
+  padding: 80px 30px 0;
+  .title {
+    font-size: 30px;
+    color: #333333;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 42px;
+    margin-bottom: 20px;
+    .keys {
+      font-size: 30px;
+      color: #FF493E;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 42px;
+    }
+  }
+  .subTitle {
+    font-size: 28px;
+    color: #999999;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .groupImg {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 193px;
+  }
+  .btn {
+    background: $btn-color;
+  }
+  .desc {
+    display: inline-block;
+    width: 465px;
+    font-size: 24px;
+    color: #999999;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 33px;
+    margin-top: 20px;
+  }
+}

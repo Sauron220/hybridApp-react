@@ -1,0 +1,83 @@
+@import "../common";
+
+.feedback{
+  .topHeight{
+    width: 100%;
+    height:260px;
+  }
+  .conHeight{
+    height: 160px;
+    padding:30px 30px 0;
+  }
+  .homeBtn{
+    width: 690px;
+    height: 70px;
+    margin: 0 auto;
+    font-size: 34px;
+    background: #2756D7;
+    @include borderRadius(8px);
+    color: #fff;
+    line-height: 70px;
+  }
+  .iconStyle{
+    float: left;
+    //padding-top:2px;
+    vertical-align: top;
+    width: 34px;
+    height: 34px;
+    margin-right: 11px;
+  }
+  .iconjj{
+    color:#FF5354;
+  }
+  .iconbj{
+    color: #1F73E9;
+  }
+  .iconcg{
+    color: #19C43E;
+  }
+  .iconda{
+    color: #1F73E9;
+  }
+  .textStyle{
+    float: left;
+    width: 584px;
+    font-family: PingFang-SC-Medium;
+    font-size: 30px;
+    color: #0A0A0A;
+    letter-spacing: 0;
+  }
+  .tipImg{
+    width: 100%;
+    height: 171px;
+  }
+  .imgBg{
+    padding: 20px 0;
+    background: #fafafa;
+  }
+  .recommend{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    position: relative;
+    @extend .underline;
+    span{
+      display: inline-block;
+      font-family: PingFang-SC-Medium;
+      font-size: 36px;
+      color: #0A0A0A;
+      letter-spacing: 0;
+      margin: 0 24px;
+    }
+    i{
+      color: #1F73E9;
+    }
+  }
+  .ad{
+    width: 602px;
+    height: 499px;
+    margin: 24px auto 0;
+    background: #ff0;
+  }
+}

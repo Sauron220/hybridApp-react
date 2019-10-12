@@ -1,0 +1,56 @@
+@import "../../assets/scss/common";
+.dateWarp {
+  max-height: 108px;
+  height: 108px;
+  .label-root {
+    font-size: 30px;
+    color: #333333;
+    letter-spacing: 0;
+  }
+  .label-focused {
+    font-size: 26px;
+    color: #2756D7;
+    letter-spacing: 0;
+  }
+  .label-error-color {
+    color: #FF493E;
+  }
+  .input-date-value {
+    font-size: 30px;
+    color: #333333;
+    letter-spacing: 0;
+  }
+  .input-underline {
+    &:before {
+      @extend .underline;
+      left: 30px;
+    }
+  }
+  .validate-error-underline {
+    &:before {
+      @extend .underline;
+      left: 30px;
+      background-color: #FF493E;
+    }
+  }
+  :global {
+    .am-list-brief {
+      font-size: 0.4rem !important;
+      color: #333333 !important;
+      letter-spacing: 0;
+      margin-top: 0 !important;
+    }
+    .am-list-extra {
+      display: none;
+    }
+    .am-list-item {
+      height: 1.44rem;
+    }
+    .am-list-line {
+      &:after {
+        background-color: white !important;
+        height: 0 !important;
+      }
+    }
+  }
+}

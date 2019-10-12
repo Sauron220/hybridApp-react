@@ -1,0 +1,28 @@
+@import "../../assets/scss/common";
+.textarea-wrap {
+  .label-name {
+    font-size: 30px;
+    color: #000F37;
+    letter-spacing: 0;
+    padding-left: 30px;
+    font-weight: bold;
+    line-height: 84px;
+    background-color: #f6f7fa;
+  }
+  .validate-error {
+    color: #FF493E;
+  }
+  :global {
+    .am-list-header {
+      padding: 0;
+    }
+    .am-list-body {
+      &:before {
+        height: 0!important;
+      }
+      &:after {
+        height: 0!important;
+      }
+    }
+  }
+}

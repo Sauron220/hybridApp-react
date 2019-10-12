@@ -1,0 +1,71 @@
+.proofMaterials{
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  .titCon{
+    font-family: PingFang-SC-Medium;
+    font-size: 30px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  .asterisk{
+    color: #f00;
+    font-family: PingFang-SC-Medium;
+    font-size: 30px;
+    color: #FF493E;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  .plusIcon{
+    width: 38px;
+    height: 38px;
+    color:#2756D7;
+  }
+  .tipStyle{
+    text-align: center;
+    font-family: PingFang-SC-Medium;
+    font-size: 28px;
+    color: #D3D3D3;
+    letter-spacing: 0;
+    margin-top: 20px;
+  }
+  .uploadBtn{
+    background: #2756D7;
+    position: absolute !important;
+    left: 30px;
+    right: 30px;
+    bottom: 80px;
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  :global{
+    .am-list-item .am-list-line .am-list-brief{
+      font-family: PingFang-SC-Regular;
+      font-size: 14px;
+      color: #BEBEBE;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+    .am-list-body::after{
+      height: 0px !important;
+    }
+    .am-list-body::before{
+      height: 0px !important;;
+    }
+    .am-list-line{
+      border-bottom: 1px solid #E1E1E1;
+    }
+    .am-list:nth-of-type(3) {
+      .am-list-line{
+        border-bottom: none;
+      }
+    }
+   .am-list-brief{
+      margin-top: 0px !important;
+    }
+  }
+}

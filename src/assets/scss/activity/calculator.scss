@@ -1,0 +1,114 @@
+%item_alignCenter{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:center;
+  -webkit-box-pack:center;
+  box-pack:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -ms-flex-align:center;
+  -webkit-box-align:center;
+  box-align:center;
+  -webkit-align-items:center;
+  align-items:center;
+}
+
+.calculator {
+  .loan-amount-head {
+    padding-top: 46px;
+
+    @extend %item_alignCenter;
+
+    flex-direction: column;
+    .title-amount {
+      font-size: 28px;
+      color: #B1BCD3;
+      letter-spacing: 0;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .input-warp {
+      .input-con {
+        width: 290px;
+        height: 100px;
+        text-align: center;
+        border:none;
+        border-bottom: 1px solid #B1BCD3;
+        font-size: 70px;
+        color: #1F73E9;
+      }
+    }
+  }
+  .mg20{
+    margin-top:40px;
+  }
+  .calculator-result {
+    margin-top: 79px;
+  }
+  .trBtmBorder {
+    border-bottom: 1px solid #D8D8D8;
+  }
+  .btm-text-desc {
+    position: relative;
+    top: 330px;
+    line-height: 38px;
+    font-size: 26px;
+    color: #AAAAAA;
+    letter-spacing: 0;
+    text-align: center;
+    max-width: 710px;
+    margin: 0 auto;
+    @media screen and (max-height: 568px) {
+      top: 300px
+    }
+  }
+
+  .cal-tab{
+    width: 100%;
+    line-height: 40px;
+    thead{
+      width: 100%;
+      th{
+        color: #2c3e50;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        width: 25%;
+        font-size: 30px;
+      }
+    }
+
+    tbody{
+      tr{
+        td{
+          color: #2c3e50;
+          height: 80px;
+          line-height: 80px;
+          text-align: center;
+          width: 25%;
+          font-size: 30px;
+        }
+      }
+    }
+
+
+    &:after {
+      border: none;
+    }
+    td:after {
+      border: none;
+    }
+    th:after {
+      border: none;
+    }
+    td:before {
+      border: none;
+    }
+    th:before {
+      border: none;
+    }
+  }
+}
+

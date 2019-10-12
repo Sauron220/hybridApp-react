@@ -1,0 +1,110 @@
+.mine {
+  flex: 1;
+  background-color: rgb(246, 247, 250);
+  .user-info {
+    padding: 20px 0 40px;
+    width: 100%;
+    background: url("../../img/userBg.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    .user-img {
+      display: block;
+      width: 136px;
+      height: 136px;
+      margin: 0 auto;
+    }
+
+    .welcomeTip {
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+      padding: 25px 0;
+      font-weight: bold;
+    }
+
+    .textStyle {
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0 0;
+      line-height: 50px;
+      font-weight: bold;
+    }
+
+    .logIn {
+      width: 193px;
+      height: 56px;
+      -webkit-border-radius: 28px;
+      -moz-border-radius: 28px;
+      border-radius: 28px;
+      font-size: 34px;
+      font-weight: bold;
+      color: rgba(52, 71, 130, 1);
+      line-height: 56px;
+      margin: 0 auto;
+    }
+  }
+
+  .logOut {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+  }
+
+  :global {
+    .am-button {
+      border: none;
+    }
+
+    .am-list-item {
+      margin-left: 15px;
+      border-bottom: 1px solid #E1E1E1;
+      padding-left: 0 !important;
+      height: 1.45333rem;
+
+      .am-list-thumb {
+        display: flex;
+        align-items: center;
+      }
+
+      .am-list-line-multiple {
+        padding: 15px 15px 15px 0;
+      }
+
+      .am-list-content {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .am-list-line {
+        border-bottom: none !important;
+
+        &:after {
+          height: 0 !important;
+        }
+
+        .am-list-arrow {
+          width: .53333rem;
+          height: .53333rem;
+          background: url("../../img/arrow.png") no-repeat center;
+          -webkit-background-size: 0.16rem 0.24rem;
+          background-size: 0.16rem 0.24rem;
+        }
+      }
+
+      //&:nth-of-type(3) {
+      //  border-bottom: none;
+      //}
+      //
+      //&:nth-of-type(6) {
+      //  border-bottom: none;
+      //}
+      //
+      //&:nth-of-type(10) {
+      //  border-bottom: none;
+      //}
+    }
+  }
+}

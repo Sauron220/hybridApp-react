@@ -1,0 +1,56 @@
+@import "../common";
+.suggestion-wrap {
+  height: auto;
+  padding-bottom: 40px;
+  background-color: rgba(246,247,250,1);
+  .complete-btn {
+    @extend .continueBtn;
+    margin-top: 56px;
+  }
+  .label-name {
+    font-size: 28px;
+    color:rgba(0,15,55,1);
+    letter-spacing: 0;
+    padding-left: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    background-color: #f6f7fa;
+  }
+  .upload-img-type {
+    padding-right: 30px;
+    text-align: right;
+    height:40px;
+    font-size:28px;
+    font-weight:500;
+    color:rgba(211,211,211,1);
+    line-height:40px;
+  }
+  .input-wrap {
+    height: 110px;
+  }
+  :global {
+    .am-image-picker-list {
+      padding: 0.56rem 0.4rem;
+      margin-bottom: 0.12rem;
+    }
+    .am-list-header {
+      padding: 0;
+    }
+    .am-list-footer {
+      padding: 0;
+    }
+    .am-list-body {
+      &:after {
+        height: 0!important;
+      }
+    }
+    .am-textarea-count {
+      right: 0.4rem;
+    }
+    .am-textarea-count {
+      span {
+        color: #bbb!important;
+      }
+    }
+  }
+}

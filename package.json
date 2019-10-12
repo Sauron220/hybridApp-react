@@ -1,0 +1,62 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cross-env debug=1 envUrl=ag_dev umi dev",
+    "dev": "cross-env debug=1 envUrl=ag_dev umi dev",
+    "build:dev": "cross-env debug=1 envUrl=ag_dev UMI_ENV=prod umi build && npm run zip",
+    "build:sit": "cross-env debug=1 envUrl=ag_dev UMI_ENV=prod umi build && npm run zip",
+    "build:prod": "cross-env debug=0 envUrl=ag_dev UMI_ENV=prod umi build && npm run zip",
+    "zip": "node archiver.js",
+    "test": "umi test",
+    "lint": "eslint --ext .js src mock tests",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "antd": "^3.23.4",
+    "axios": "^0.19.0",
+    "better-scroll": "^1.15.2",
+    "blueimp-md5": "^2.12.0",
+    "classnames": "^2.2.6",
+    "dva": "^2.6.0-beta.6",
+    "dva-model-extend": "^0.1.2",
+    "react": "^16.9.0",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.9.0",
+    "react-transition-group": "^4.2.2",
+    "store": "^2.0.12"
+  },
+  "devDependencies": {
+    "archiver": "^3.1.1",
+    "babel-eslint": "^9.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "lrz": "^4.9.40",
+    "node-sass": "^4.12.0",
+    "postcss-pxtorem": "^4.0.1",
+    "react-photoswipe": "^1.3.0",
+    "react-test-renderer": "^16.7.0",
+    "sass-loader": "^7.3.1",
+    "umi": "^2.9.6",
+    "umi-plugin-react": "^1.10.1"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,jsx}": [
+        "eslint --fix",
+        "git add"
+      ]
+    },
+    "ignore": ["**/public/*.js", "**/dist/*.js"]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

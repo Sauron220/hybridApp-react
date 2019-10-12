@@ -1,0 +1,18 @@
+.form-wrap {
+  .title {
+    font-size: 30px;
+    color: #000F37;
+    letter-spacing: 0;
+    padding-left: 30px;
+    font-weight: bold;
+    line-height: 84px;
+    background-color: #f6f7fa;
+  }
+  :global {
+    .am-list-body {
+      &:after {
+        height: 0!important;
+      }
+    }
+  }
+}

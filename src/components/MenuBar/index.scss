@@ -1,0 +1,11 @@
+.tabWarp {
+  height: 100%;
+  .am-tab-bar-item {
+    height: auto !important;
+    flex: 1 1;
+    padding-bottom: 50px;
+  }
+  .am-tab-bar-item-no-padding {
+    height: 100%;
+  }
+}

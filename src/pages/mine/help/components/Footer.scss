@@ -1,0 +1,19 @@
+.link {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: #AAAAAA;
+  background: #F6F7FA;
+  &.fixed {
+  	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	z-index: 1;
+  }
+}
+
+.text {
+  color: #2756D7;
+}

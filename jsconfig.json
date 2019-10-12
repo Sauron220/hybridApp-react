@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "component/*": ["src/components/*"],
+      "layout/*": ["src/layouts/*"],
+      "page/*": ["src/pages/*"],
+      "model/*": ["src/models/*"],
+      "locales/*": ["src/locales/*"],
+      "assets/*": ["src/assets/*"],
+      "libs/*": ["src/libs/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src"]
+}

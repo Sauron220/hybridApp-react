@@ -1,0 +1,65 @@
+/**
+ * 右侧淡入，右侧淡出
+ */
+.router-wrapper {
+  overflow: hidden;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.router-wrapper::-webkit-scrollbar {
+  width: 0!important;
+}
+
+.forward-from-right-enter {
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.forward-from-right-enter-active {
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 250ms ease;
+}
+
+.forward-from-right-exit {
+  z-index: 1;
+  opacity: 0;
+}
+
+.forward-from-right-exit-active {
+  z-index: 1;
+  opacity: 0;
+  transition: all 250ms ease;
+}
+
+.back-to-right-enter {
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.back-to-right-enter-active {
+  z-index: 1;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 250ms ease;
+}
+
+.back-to-right-exit {
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.back-to-right-exit-active {
+  z-index: 2;
+  opacity: 0;
+  transform: translate(100%);
+  transition: all 250ms ease;
+}
